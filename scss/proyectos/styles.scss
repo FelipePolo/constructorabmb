@@ -1,0 +1,18 @@
+@import "../functions";
+@import "../variables";
+@import "../mixins/breakpoints";
+@import "../complementos/nav.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+}
+
+body{
+  
+  background-color: #D8E4EB;
+  overflow-x:hidden !important;
+}
+@import "../complementos/eslogan.scss";
+@import "../complementos/footer.scss";

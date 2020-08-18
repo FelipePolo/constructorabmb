@@ -1,0 +1,140 @@
+@import "../functions";
+@import "../variables";
+@import "../mixins/breakpoints";
+@import "../complementos/nav.scss";
+@import "../complementos/footer.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  font-family: 'gothaml';
+}
+
+body{
+  background-color: #D8E4EB;
+  overflow-x:hidden !important;
+}
+:root {
+  --gris: #919191;
+}
+
+
+.contacto{
+  background-image:url("../../imagenes/imagenfondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 50px 0px !important;
+}
+
+.iniciocontacto{
+  display: flex;
+  img{
+    width: 100%;
+    height: 250px;
+  }
+}
+
+.slidercontacto{
+  margin-top: 10px;
+  img{
+    height: 300px;
+  }
+}
+
+
+.informacioncontacto{
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 40px;
+  margin-bottom: 20px;
+  ul{
+    margin: 10px;
+  }
+}
+
+.formulario{
+  display: flex;
+  justify-content: center;
+  div{
+    margin: 5px 0px;
+    padding: 0px 5px !important;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    label{
+      font-weight: 700;
+    }
+    input,select{
+      border-radius: 5px;
+      padding-left: 10px;
+      color: #919191;
+      height: 35px;
+    }
+  }
+}
+
+
+@include media-breakpoint-up(sm){
+  .iniciocontacto{
+    justify-content: center;
+    img{
+      max-width: 280px;
+    }
+  }
+  .informacioncontacto{
+    max-width: 650px;
+    margin: auto;
+  }
+  .slidercontacto{
+    margin: auto;
+    max-width: 615px;
+  }
+  .formulario{
+    margin: auto;
+    max-width: 615px;
+    div{
+      input{
+        height: 45px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md){
+  .contacto{
+    padding: 100px 0px !important;
+  }
+}
+
+@include media-breakpoint-up(lg){
+  .contacto{
+    height: 100vh;
+    min-height: 830px;
+    display: flex;
+    flex-flow: row;
+  }
+  .slidercontacto{
+    margin: 0px;
+    max-width: 720px;
+    img{
+      height: 475px;
+    }
+  }
+  .informacioncontacto{
+    padding: 0px;
+    margin: auto 0px;
+  }
+  .formulario{
+    margin-top:0px;
+    padding: 45px 0px;
+    background-color: #0006;
+    max-width: 615px;
+    div{
+      input{
+        height: 45px;
+      }
+    }
+  }
+}

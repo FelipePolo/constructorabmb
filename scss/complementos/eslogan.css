@@ -1,0 +1,26 @@
+.eslogan {
+  background-image: url("../../imagenes/parallaxmobile.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 200px;
+  color: #fff;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.eslogan h2 {
+  font-weight: 900;
+  width: 100%;
+}
+
+.eslogan h2 span {
+  font-weight: 700;
+}
+/*# sourceMappingURL=eslogan.css.map */
