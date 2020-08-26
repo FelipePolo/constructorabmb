@@ -232,6 +232,14 @@ body {
   max-height: 400px;
 }
 
+h1 {
+  font-family: "gothamb";
+  margin: 20px 0;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+}
+
 .contenido_principal .col-12 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -291,66 +299,6 @@ body {
   color: #41273b;
 }
 
-.eslogan {
-  background-image: url("../../imagenes/parallaxmobile.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 200px;
-  color: #fff;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.eslogan h2 {
-  font-weight: 900;
-  width: 100%;
-}
-
-.eslogan h2 span {
-  font-weight: 700;
-}
-
-@media (min-width: 576px) {
-  .eslogan {
-    height: 320px;
-  }
-  .eslogan h2 {
-    font-size: 40px;
-  }
-  .eslogan h2 span {
-    font-size: 25px;
-  }
-}
-
-@media (min-width: 992px) {
-  .eslogan {
-    margin: 60px 0;
-    background-image: url("../../imagenes/parallaxdestock.jpeg");
-    height: 500px;
-  }
-  .eslogan h2 {
-    font-size: 60px;
-  }
-  .eslogan h2 span {
-    font-size: 40px;
-  }
-}
-
-.galeria {
-  margin-top: 30px;
-}
-
-.galeria img {
-  width: 100%;
-}
-
 @media (min-width: 768px) {
   .banner_intro {
     padding-top: 94px;
@@ -361,12 +309,14 @@ body {
 }
 
 @media (min-width: 992px) {
+  h1 {
+    margin-bottom: 50px;
+  }
   .banner_intro {
     margin-bottom: 40px;
   }
   .banner_intro img {
     width: 100%;
-    max-height: 800px;
   }
 }
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=style.css.map */

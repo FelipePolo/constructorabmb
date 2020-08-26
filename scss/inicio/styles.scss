@@ -13,111 +13,53 @@
   --gris: #919191;
 }
 
-body {
-  background-color: #d8e4eb;
-}
-
 @import "../complementos/nav.scss";
 
+h1{
+  font-weight: 700;
+  color: #212529;
+  margin: 10px 0;
+  text-align: center;
+}
+
 .caracteristicas {
-  .miradordosangeles {
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-    h1 {
-      color: #000;
-      font-family: "gothamb";
-      font-size: 2em;
-      font-weight: 600;
-      text-align: center;
-      margin-top: 30px;
-    }
-    img {
-      width: 290px;
-      height: 250px;
-      align-self: center;
-    }
-  }
-  h3 {
-    color: var(--gris);
-    margin-top: 20px;
-    text-align: center;
+  color: var(--gris);
+  p{
     font-size: 20px;
+    transition: all 0.5s;
   }
-  h3:hover {
+  p:hover{
     color: #41273b;
-  }
-  img {
-    width: 100%;
-    height: 300px;
-  }
-  p {
-    font-family: "gothaml";
-    color: var(--gris);
-    margin: 40px 0;
-    line-height: 28px;
-    padding: 20px;
-    font-size: 22px;
-    line-height: normal;
-    -o-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
-  p:hover {
-    color: #41273b;
-  }
-  .santamarta {
-    padding: 0;
-    strong {
-      font-size: 22px;
-      a {
-        color: inherit;
-        font-size: 22px;
-        text-decoration: none;
-      }
-    }
   }
 }
-.suscripcion {
-  display: flex;
-  flex-direction: column;
-  background-color: #3fa9f5;
+
+// incluyendo el eslogan
+
+@import "../complementos/eslogan.scss";
+
+.boton_contacto{
+  font-weight: 700;
   color: #fff;
-  padding: 30px 20px;
-  h2 {
-    font-family: "gothamb";
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 20px;
-  }
-  form {
-    display: flex;
-    justify-content: space-evenly;
-    input {
-      display: flex;
-      border: none;
-      border-radius: 30px;
-      padding-left: 20px;
-      height: 40px;
-      width: 70%;
-      max-width: 400px;
-      min-width: 240px;
-      margin-right: 10px;
-    }
-    button {
-      background-color: #2461dd;
-      color: #fff;
-      border: none;
-      padding: 10px;
-      border-radius: 10px;
-    }
-  }
+  font-size: 25px;
+  margin: 0 auto;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+
+  transition: all 0.5s;
+}
+.boton_contacto:hover{
+  color: #2461DD;
+  border-color: #2461DD;
+  text-decoration: none;
 }
 
 @import "../complementos/footer.scss";
+
+
+
+
+
 // RESPONSIVE FOR OTHER RESOLUTIONS
 
 @include media-breakpoint-up(sm) {
@@ -135,9 +77,6 @@ body {
 
 // TABLET RESOLUTION
 @include media-breakpoint-up(md) {
-  .container-fluid {
-    z-index: 10 !important;
-  }
   #bannersintro {
     img {
       height: 470px;
@@ -170,6 +109,7 @@ body {
       height: 90vh;
     }
   }
+
   .caracteristicas {
     display: block;
   }

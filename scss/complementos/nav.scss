@@ -1,22 +1,33 @@
 .header {
+  .navbar{
+    background-color: #D8E4EB;
+  }
   .logo {
     display: flex;
     align-items: flex-end;
-    img{
+    img {
       width: 200px;
-      height: 70px;
+      height: 60px;
     }
   }
+
   .navlinks {
     text-align: center;
     li {
       a {
         font-size: 18px;
         font-family: "gothamb" !important;
-        color: #000 !important;
+        color: #2461DD!important;
       }
     }
   }
+}
+
+
+
+.bg-inverse {
+  background-color: #fff !important;
+  transition: all 1s ease;
 }
 
 #bannersintro {
@@ -51,22 +62,36 @@
 /////
 @include media-breakpoint-up(md) {
   header {
-    background-color: hsl(314, 25%, 20%) !important;
+    width: 100vw;
     z-index: 5;
-    position: relative;
+    position: fixed;
+
+    // sombra
+
+    -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.41);
+    -moz-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.41);
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.41);
+
     .navbar {
-      position: absolute;
+      transition: all 1s ease;
       width: 100%;
       .collapse {
         display: flex;
         justify-content: flex-end;
+
         li {
           margin-left: 20px;
           a {
             font-size: 19px;
-            font-weight: 800;
+            font-weight: 100;
           }
           a:hover {
+            border: none;
+            border-radius: 10px;
+            color: #fff !important;
+            background-color: #2461dd;
+          }
+          .active{
             border: none;
             border-radius: 10px;
             color: #fff !important;
@@ -77,4 +102,3 @@
     }
   }
 }
-

@@ -17,7 +17,7 @@
 
 .footer-head img {
   margin-top: 10px;
-  width: 150px;
+  width: 250px;
 }
 
 .footer-head ul {
@@ -57,6 +57,7 @@
 }
 
 .footer-body .col-12 h3 {
+  color: #212529;
   font-family: "gothaml";
   font-size: 20px;
   margin-bottom: 10px;

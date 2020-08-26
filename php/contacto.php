@@ -23,7 +23,7 @@ try {
     $useremail = isset($_POST['email']) ? $_POST['email'] : "No Digito Su EMAIL";
     $usercountry = isset($_POST['pais']) ? $_POST['pais'] : "No Digito Su PAIS";
     $usercity = isset($_POST['ciudad']) ? $_POST['ciudad'] : "No Digito Su CIUDAD";
-    $asesora = isset($_POST['asesora']) ? $_POST['asesora'] : "NINGUNA";
+    $asesora = isset($_POST['asesora']) ? $_POST['asesora'] : "Ingrith Emily Polo Prada";
   //
 
 

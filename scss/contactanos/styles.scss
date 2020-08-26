@@ -12,7 +12,6 @@
 }
 
 body{
-  background-color: #D8E4EB;
   overflow-x:hidden !important;
 }
 :root {
@@ -109,12 +108,12 @@ body{
 }
 
 @include media-breakpoint-up(lg){
-  .contacto{
-    height: 100vh;
-    min-height: 830px;
-    display: flex;
-    flex-flow: row;
-  }
+  // .contacto{
+  //   height: 100vh;
+  //   min-height: 830px;
+  //   // display: flex;
+  //   // flex-flow: row;
+  // }
   .slidercontacto{
     margin: 0px;
     max-width: 720px;

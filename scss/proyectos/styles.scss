@@ -3,16 +3,110 @@
 @import "../mixins/breakpoints";
 @import "../complementos/nav.scss";
 
+:root {
+  --gris: #919191;
+}
+
 * {
   padding: 0;
   margin: 0;
-  font-size: 15px;
+  font-size: 16px;
+  font-family: "gothamb";
 }
 
-body{
-  
-  background-color: #D8E4EB;
-  overflow-x:hidden !important;
+body {
+  overflow-x: hidden !important;
 }
+
+h1{
+  margin: 20px 0;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  text-align: center;
+}
+
+.video{
+  width: 100%;
+  height: 300px;
+}
+
+.info {
+  font-size: 17px;
+  color: var(--gris);
+  transition: all 0.5s;
+}
+.info:hover {
+  color: #41273b;
+}
+
+
+
+
+.casa {
+  margin: auto;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  // max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  //sombra
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.56);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.56);
+
+  h2 {
+    margin-bottom: 20px;
+  }
+  img {
+    width: 100%;
+    max-height: 190px;
+  }
+  ul {
+    text-align: center;
+  }
+}
+
+h3 {
+  font-size: 20px;
+  color: var(--gris);
+  font-family: "gothaml";
+  text-align: center;
+}
+.card {
+  color: var(--gris);
+  &-subtitle,
+  &-title {
+    color: #3399ff;
+    font-family: "gothamb";
+    font-weight: 500;
+  }
+  &-text {
+    font-family: "gothaml";
+  }
+  transition: 0.5s !important;
+}
+.card:hover {
+  text-decoration: none;
+  color: #41273b;
+}
+
 @import "../complementos/eslogan.scss";
 @import "../complementos/footer.scss";
+
+// RESPONSIVE FOR OTHER RESOLUTIONS
+
+@include media-breakpoint-up(md) {
+  .proyectos_banner {
+    padding-top: 94px;
+    video {
+      width: 100%;
+      max-height: 800px;
+    }
+  }
+}
